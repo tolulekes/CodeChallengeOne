@@ -43,7 +43,7 @@ class FlowerListAdapter(private val clickListener: FlowerClickListener) :
 
     object FlowerDiffCallback : DiffUtil.ItemCallback<Flower>() {
         override fun areItemsTheSame(oldItem: Flower, newItem: Flower) = oldItem == newItem
-        override fun areContentsTheSame(oldItem: Flower, newItem: Flower) = oldItem.id == newItem.id
+        override fun areContentsTheSame(oldItem: Flower, newItem: Flower) = oldItem.name == newItem.name
     }
 }
 
